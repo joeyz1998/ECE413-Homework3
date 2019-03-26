@@ -77,7 +77,7 @@ switch choice
     case 17
         file = fopen('midi/brawl.mid');
     case 18
-        file = fopen('midi/toxic.mid'); % insert any file here and press button
+        file = fopen('midi/rickroll.mid'); % insert any file here and press button
     otherwise
 end
 mid = fread(file);

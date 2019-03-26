@@ -217,7 +217,7 @@ while i < length(mid) - 3
                         i = i + 3;
                         continue
                     case {'010'} % below are commands not yet programmed in, 
-                        % however still have switch cases so i can be incremented
+                        % however still have switch cases so i can be incremented by proper amount
                         i = i + 3;
                         continue
                     case {'101'}

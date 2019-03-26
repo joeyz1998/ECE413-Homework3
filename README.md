@@ -4,11 +4,11 @@ Homework Assignment 3
 MIDI Decoder
 
 
-Code works by running the hw3.m file. The GUI shows a few midi files that are included in the /midi folder placed in the same directory as the rest of the code. In order to play your own midi file, simply place a .mid file in the /midi folder, and change the choice = 18 switch case statement to open midi/FILENAME.mid My personal favorite songs to listen to are Hyrule Field, Sonata 8, Super Smash Bros, and the mystery last option.
+Code works by running the hw3.m file. The GUI shows a few midi files that are included in the /midi folder placed in the same directory as the rest of the code. In order to play your own midi file, simply place a .mid file in the /midi folder, and change the choice = 18 switch case statement to open midi/FILENAME.mid
 
 The code first parses the whole midi file to locate all notes in the song, and then creates a player object containing all the notes in the song, in a noteArray. Then, the playAudio function is envoked, which then accesses the notes in the array and plays the appropriate one. A drum line was made with a different FM model, and new envelope generators were instatiated to accomodate them. Drum lines are known because they are on channel 9. 
 
-In order to improve performance with longer songs, the synth object was altered to only loop through 200 notes at a time. This required changing the way the objEnv objects keep their own time. Instead, the synth object is the only object keeping time, and it passes this down through all subsequent objects, (osc, env). Having this fix makes it possible to listen to much longer songs than those provided.
+In order to improve performance with longer songs, the synth object was altered to only loop through 200 notes at a time. This required changing the way the objEnv objects keep their own time. Instead, the synth object is the only object keeping time, and it passes this down through all subsequent objects, (osc, env). Having this fix makes it possible to listen to much longer songs than those provided. My personal favorites are Hyrule Field, Sonata 8, the Super Smash Bros Theme, and the mystery last option.
 
 The testscript.m file can be used to test out the instruments before playing a full song. Simply set the inst constant, and run the code.
 
